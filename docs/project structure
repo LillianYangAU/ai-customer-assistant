@@ -1,0 +1,31 @@
+ai-customer-assistant/
+├── client/                     # 前端 React 应用
+│   ├── public/
+│   └── src/
+│       ├── components/
+│       ├── pages/
+│       ├── services/          # API 请求封装
+│       └── App.jsx
+│   └── tailwind.config.js
+│   └── package.json
+│
+├── server/                     # Node.js 后端服务
+│   ├── routes/
+│   ├── controllers/
+│   ├── services/              # GPT API 调用、队列处理逻辑
+│   ├── utils/
+│   └── index.js
+│   └── package.json
+│
+├── infra/                      # 基础设施部署文件（AWS）
+│   ├── lambda/                # AWS Lambda 函数代码
+│   ├── terraform/             # Terraform 脚本（可选）
+│   └── docker/                # Dockerfile 或 ECS 部署配置
+│
+├── docs/                       # 文档和架构图
+│   ├── architecture.png
+│   └── api-spec.md
+│
+├── .env.example                # 环境变量模板
+├── README.md
+└── LICENSE
